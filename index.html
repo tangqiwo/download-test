@@ -58,10 +58,14 @@
     <script>
         const download2 = () => {
             const url = "https://pre-test.oxldkm.com/download/as/OL/xc-sport-v2.0.apk?v=1002";
-            // 通过
+            // 生成iframe，设置src，然后删除
+            const iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = url;
+            document.body.appendChild(iframe);
             setTimeout(() => {
-                location.href = url;
-            }, 500);
+                iframe.remove();
+            }, 5 * 1000);
         }
     </script>
     </body>
