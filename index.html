@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +20,7 @@
 
 		<a href="https://y02ar9.cn/gPf8.app">杏彩体育-PRE 2.0 IOS包</a><br>
 
-		<a href="https://pre-test.oxldkm.com/download/as/OL/xc-sport-v2.0.apk?v=1002">杏彩体育-2.0 OL安卓包</a><br>
+		<span style="cursor: pointer; text-decoration: underline;" onclick="download2()">杏彩体育-2.0 OL安卓包</span><br>
 
         <a href="https://pre-test.oxldkm.com/download/as/OL/xc-sport-v2.0-universal.apk?v=1002">杏彩体育-2.0 低版本OL安卓包</a><br>
 
@@ -54,6 +53,15 @@
     <script>
         window.onload = function () {
             new QRCode(document.getElementById('download-qrcode'), {text:"https://pre-test.oxldkm.com/download.html?v=10221", width:180, height:180});
+        }
+    </script>
+    <script>
+        const download2 = () => {
+            const url = "https://pre-test.oxldkm.com/download/as/OL/xc-sport-v2.0.apk?v=1002";
+            // 通过
+            setTimeout(() => {
+                location.href = url;
+            }, 500);
         }
     </script>
     </body>
